@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jak wyłączyć automatycznie uruchamianie programów przy starcie systemu | inftechall</title>
+
+    <meta name="author" content="Rafał Marzewski">
+    <meta name="description" content="Poniższy artykuł przedstawia różne sposoby jak wyłączyć automatycznie uruchamianie programów przy starcie systemu Windows.">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+  <body>
+    <div class="container pb-4 border-left-right wide">
+      <header class="pb-2">
+          <div class="page-title">
+              <a href="/">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-code-slash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z"/>
+                    </svg>
+                  <div class="inftechall">inftechall</div><div class="pl">.pl</div>
+                  <h1 id="demo"></h1>
+              </a>
+          </div><div class="category-navigation pt-2">
+    <nav class="nav justify-content-between">
+        <a href="/category/android.html">Android</a>
+        <a href="/category/c_sharp.html">C#</a>
+        <a href="/category/windows.html">Microsoft Windows</a>
+        <a href="/category/office.html">Office</a>
+        <a href="/category/przegladarki-internetowe.html">Przeglądarki Internetowe</a>
+        <a href="/category/siec-i-internet.html">Sieć i Internet</a>
+        <a href="/category/software.html">Software</a>
+        <a href="/category/wordpress.html">WordPress</a>
+    </nav>
+</div>
+</header><main class="container">
+          <div class="row row-post">
+          <!-- main page -->
+            <div class="col-md-9 main-main">
+                  <h1>Jak wyłączyć automatycznie uruchamianie programów przy starcie systemu</h1>
+<p>
+  <div class="post-meta">
+      <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+          <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+      </svg>
+      23 Jun 2015
+      </div>
+
+  <div class="post-meta">
+      <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-table" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+      </svg>
+      Microsoft Windows
+  </div>
+</p>
+
+<span>[
+  
+    
+    <a href="/tag/msconfig"><code class="tags-post">#msconfig</code>&nbsp;</a>
+  
+    
+    <a href="/tag/Windows"><code class="tags-post">#Windows</code>&nbsp;</a>
+  
+]</span>
+
+<div class="post-content">
+  <p>Wraz ze startem systemu operacyjnego Windows uruchamianych jest wiele aplikacji oraz usług aktualizacyjnych, które powodują wolniejsze ładowanie systemu oraz wpływają na wydajność komputera.<!--more--> Poniższy artykuł przedstawia różne sposoby jak wyłączyć automatycznie uruchamianie programów przy starcie systemu Windows.<br />
+Oto pełna lista, gdzie można znaleźć programy startowe i jak można je wyłączyć:</p>
+
+<p><a href="#windows-8-menadżer-zadań">Windows 8 Menadżer zadań</a><br />
+<a href="#msconfig">Msconfig</a><br />
+<a href="#autostart">Autostart</a><br />
+<a href="#edytor-rejestru">Edytor rejestru</a><br />
+<a href="#usługi">Usługi</a><br />
+<a href="#winini">Win.ini</a></p>
+
+<h2 id="windows-8-menadżer-zadań">Windows 8 Menadżer zadań</h2>
+
+<p>Użytkownicy Windows 8 mogą wyłączyć programy startowe z Menedżera zadań Windows.<br />
+W tym celu naciśnij <em>Ctrl + Alt + Del</em>, a następnie kliknij <em>menedżer zadań.</em> W Menedżerze zadań kliknij kartę <em>Uruchamianie</em>. Kliknij prawym przyciskiem myszy na dowolny program startowy, który chcesz wyłączyć i wybierz z listy <em>wyłącz</em>. Po wyłączeniu status powinien automatycznie się zmienić.</p>
+
+<h2 id="msconfig">Msconfig</h2>
+
+<p><a href="/assets/uploads/2015/05/startup-tab.png"><img loading="lazy" class="img-fluid" src="/assets/uploads/2015/05/startup-tab.png" alt="startup-tab" /></a></p>
+
+<p>Większość użytkownikówsystemu Windows może skorzystać z narzędzia <em><a href="/windows/jak-korzystac-z-msconfig/">msconfig</a></em> by wyłączyć programy startowe, wykonując czynności opisane poniżej:</p>
+
+<ol>
+  <li>Kliknij przycisk <em>Start</em> i wybierz <em>Uruchom…</em></li>
+  <li>Wpisz <em><a href="/windows/jak-korzystac-z-msconfig/">msconfig</a></em></li>
+  <li>Kliknij kartę <em>Uruchamianie</em></li>
+  <li>Usuń zaznaczenie każdego z programów, aby wyłączyć go przy uruchamianiu systemu.</li>
+</ol>
+
+<h2 id="autostart">Autostart</h2>
+
+<p>Niektóre programy startowe są umieszczone folderze <em>Autostart</em>. Aby sprawdzić, czy program, który ma być usunięty jest w załadunku uruchamiania systemu Windows, wykonaj poniższe czynności:<br />
+Kliknij <em>Start</em> -&gt; <em>Programy</em> -&gt; <em>Autostart</em>, jeśli program, który chcesz usunąć jest obecny można go usunąć klikając prawym przyciskiem myszy i wybierając <em>Usuń</em>.</p>
+
+<h2 id="edytor-rejestru">Edytor rejestru</h2>
+
+<p><a href="/assets/uploads/2015/06/regedit.png"><img loading="lazy" class="img-fluid" src="/assets/uploads/2015/06/regedit.png" alt="regedit" /></a></p>
+
+<p>Rejestr systemu Windows jest kolejnym wspólnym miejscem do zlokalizowania programów ładowanych automatycznie. Poniższe czynności umożliwią wyłączenie programu z automatycznego uruchamiania wraz z systemem:</p>
+
+<ol>
+  <li>Kliknij przycisk Start -&gt; Uruchom -&gt; wpisz regedit i naciśnij klawisz Enter.</li>
+  <li>Kliknij HKEY_LOCAL_MACHINE</li>
+  <li>Kliknij Software</li>
+  <li>Kliknij Microsoft</li>
+  <li>Kliknij Windows</li>
+  <li>Kliknij CurrentVersion</li>
+  <li>Kliknij Run</li>
+</ol>
+
+<p>W folderze <em>Run</em> powinieneś być w stanie zlokalizować program. Po zlokalizowaniu, zaznacz plik i naciśnij klawisz <em>Delete</em>. Po skasowaniu, należy uruchomić ponownie komputer w celu dokonania zmian.</p>
+
+<h2 id="usługi">Usługi</h2>
+
+<p>Microsoft Windows może automatycznie załadować program poprzez usługi Windows. Wykonaj poniższe czynności, aby sprawdzić konfigurację usług obecną na komputerze. <span style="text-decoration: underline;">Uwaga:</span> Użytkownik musi mieć uprawnienia administratora, aby wykonać poniższe czynności.</p>
+
+<ol>
+  <li>Kliknij przycisk <em>Start</em> -&gt; <em>Ustawienia</em> -&gt; <em>Panel sterowania</em></li>
+  <li>Otwórz <em>Narzędzia administracyjne</em> i kliknij pozycję <em>Usługi</em></li>
+  <li>Zlokalizuj usługę, którą chcesz wyłączyć i kliknij podwójne LPM.</li>
+  <li>Zmień typ uruchomienia z automatycznego na wyłączony.</li>
+</ol>
+
+<h2 id="winini">win.ini</h2>
+
+<p>Plik inicjalizacji <em>win.ini</em> może również zawierać programy, które ładują się automatycznie (w przypadku nieprawidłowego edytowania pliki mogą wystąpić problemy z uruchamianiem komputera). Wykonaj poniższe kroki, aby uzyskać instrukcje dotyczące usuwania programów z win.ini:<br />
+Kliknij przycisk <em>Start</em> -&gt; <em>Uruchom</em> i wpisz <em>win.ini</em><br />
+Na początku dokumentu powinieneś zobaczyć wiersz <em>Run =</em>. Jeśli linia ta zawiera wiersz polecenia wskazującego do programu, którego chcemy się pozbyć należy usunąć wszystko po znaku = odnoszącego się do danej aplikacji.</p>
+
+<p><span style="text-decoration: underline;">Wskazówka:</span> Przed zmianą zaleca się aby zapisać kopie pliku, by w razie wystąpienia komplikacji można było przywrócić go do poprzedniego stanu.</p>
+   
+</div>   
+            </div>
+            
+            <div class="col-md-3 widget">
+              <div class="tags">
+                <p class="widget-title">TAGS</p>
+                <p><div class="widget-tags">
+     
+    
+             
+
+                <a href="/tag/adware"><p class="tag">adware</p></a>
+
+             
+
+                <a href="/tag/android"><p class="tag">android</p></a>
+
+             
+
+                <a href="/tag/backup"><p class="tag">backup</p></a>
+
+             
+
+                <a href="/tag/bios"><p class="tag">bios</p></a>
+
+             
+
+                <a href="/tag/blue_screen"><p class="tag">blue_screen</p></a>
+
+             
+
+                <a href="/tag/Browsers"><p class="tag">Browsers</p></a>
+
+             
+
+                <a href="/tag/błędy"><p class="tag">błędy</p></a>
+
+             
+
+                <a href="/tag/c_sharp"><p class="tag">c_sharp</p></a>
+
+             
+
+                <a href="/tag/CD"><p class="tag">CD</p></a>
+
+             
+
+                <a href="/tag/CDBurnerXP"><p class="tag">CDBurnerXP</p></a>
+
+             
+
+                <a href="/tag/Chrome"><p class="tag">Chrome</p></a>
+
+             
+
+                <a href="/tag/cmd"><p class="tag">cmd</p></a>
+
+             
+
+                <a href="/tag/diagnostyka_pamięci"><p class="tag">diagnostyka_pamięci</p></a>
+
+             
+
+                <a href="/tag/diskpart"><p class="tag">diskpart</p></a>
+
+             
+
+                <a href="/tag/DISM"><p class="tag">DISM</p></a>
+
+             
+
+                <a href="/tag/dll"><p class="tag">dll</p></a>
+
+             
+
+                <a href="/tag/drukarki"><p class="tag">drukarki</p></a>
+
+             
+
+                <a href="/tag/DVD"><p class="tag">DVD</p></a>
+
+             
+
+                <a href="/tag/excel"><p class="tag">excel</p></a>
+
+             
+
+                <a href="/tag/Exif"><p class="tag">Exif</p></a>
+
+             
+
+                <a href="/tag/Firefox"><p class="tag">Firefox</p></a>
+
+             
+
+                <a href="/tag/HDD_Raw_Copy_Tool"><p class="tag">HDD_Raw_Copy_Tool</p></a>
+
+             
+
+                <a href="/tag/Informacje_o_systemie"><p class="tag">Informacje_o_systemie</p></a>
+
+             
+
+                <a href="/tag/instalacja_Windows_8"><p class="tag">instalacja_Windows_8</p></a>
+
+             
+
+                <a href="/tag/ISO"><p class="tag">ISO</p></a>
+
+             
+
+                <a href="/tag/klonowanie_karty_SD"><p class="tag">klonowanie_karty_SD</p></a>
+
+             
+
+                <a href="/tag/Konto_użytkownika"><p class="tag">Konto_użytkownika</p></a>
+
+             
+
+                <a href="/tag/kopia_zapasowa"><p class="tag">kopia_zapasowa</p></a>
+
+             
+
+                <a href="/tag/LibreOffice"><p class="tag">LibreOffice</p></a>
+
+             
+
+                <a href="/tag/macierz"><p class="tag">macierz</p></a>
+
+             
+
+                <a href="/tag/Memory_Diagnostic"><p class="tag">Memory_Diagnostic</p></a>
+
+             
+
+                <a href="/tag/Menedżer_urządzeń"><p class="tag">Menedżer_urządzeń</p></a>
+
+             
+
+                <a href="/tag/metadane"><p class="tag">metadane</p></a>
+
+             
+
+                <a href="/tag/Mozilla"><p class="tag">Mozilla</p></a>
+
+             
+
+                <a href="/tag/msconfig"><p class="tag">msconfig</p></a>
+
+             
+
+                <a href="/tag/msinfo32"><p class="tag">msinfo32</p></a>
+
+             
+
+                <a href="/tag/nagraj_obraz_ISO"><p class="tag">nagraj_obraz_ISO</p></a>
+
+             
+
+                <a href="/tag/naprawa_systemu_Windows"><p class="tag">naprawa_systemu_Windows</p></a>
+
+             
+
+                <a href="/tag/narzędzie_konfiguracji_systemu"><p class="tag">narzędzie_konfiguracji_systemu</p></a>
+
+             
+
+                <a href="/tag/nieznane_urządzenie"><p class="tag">nieznane_urządzenie</p></a>
+
+             
+
+                <a href="/tag/ocx"><p class="tag">ocx</p></a>
+
+             
+
+                <a href="/tag/Odzyskanie_sesji"><p class="tag">Odzyskanie_sesji</p></a>
+
+             
+
+                <a href="/tag/office"><p class="tag">office</p></a>
+
+             
+
+                <a href="/tag/ole"><p class="tag">ole</p></a>
+
+             
+
+                <a href="/tag/pamięć_ram"><p class="tag">pamięć_ram</p></a>
+
+             
+
+                <a href="/tag/pasek_zadań"><p class="tag">pasek_zadań</p></a>
+
+             
+
+                <a href="/tag/path"><p class="tag">path</p></a>
+
+             
+
+                <a href="/tag/pdf"><p class="tag">pdf</p></a>
+
+             
+
+                <a href="/tag/przywracanie_systemu"><p class="tag">przywracanie_systemu</p></a>
+
+             
+
+                <a href="/tag/RAM"><p class="tag">RAM</p></a>
+
+             
+
+                <a href="/tag/ramdysk"><p class="tag">ramdysk</p></a>
+
+             
+
+                <a href="/tag/regedit"><p class="tag">regedit</p></a>
+
+             
+
+                <a href="/tag/regsvr32"><p class="tag">regsvr32</p></a>
+
+             
+
+                <a href="/tag/root"><p class="tag">root</p></a>
+
+             
+
+                <a href="/tag/sfc"><p class="tag">sfc</p></a>
+
+             
+
+                <a href="/tag/sieć_i_internet"><p class="tag">sieć_i_internet</p></a>
+
+             
+
+                <a href="/tag/sterowniki"><p class="tag">sterowniki</p></a>
+
+             
+
+                <a href="/tag/usb"><p class="tag">usb</p></a>
+
+             
+
+                <a href="/tag/Web_browser"><p class="tag">Web_browser</p></a>
+
+             
+
+                <a href="/tag/Windows"><p class="tag">Windows</p></a>
+
+             
+
+                <a href="/tag/Windows_8"><p class="tag">Windows_8</p></a>
+
+             
+
+                <a href="/tag/Windows_XP"><p class="tag">Windows_XP</p></a>
+
+             
+
+                <a href="/tag/WWW"><p class="tag">WWW</p></a>
+
+             
+
+                <a href="/tag/youtube"><p class="tag">youtube</p></a>
+
+            
+            
+</div></p>
+              </div>
+              
+            </div>
+          </div>
+        </main>
+    </div><footer class="footer">
+    <div class="container">
+        <nav class="footer-navigation">
+            <a class="nav-border-right" href="/" >Strona główna</a>
+            <a class="nav-border-right" href="/about.html" >About</a>
+            <a href="/kontakt.html" >Kontakt</a>
+        </nav>
+        <p class="footer-credits">Copyrights © 2016-2020 <a href="/">inftechall.pl</a></p>
+        <a class="footer-back-to-top" href="#">Back to top</a>
+    </div>
+</footer><script src="/assets/scripts/main.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>[rozwiązanie] Instalator nie mógł utworzyć nowej partycji systemowej | inftechall</title>
+
+    <meta name="author" content="Rafał Marzewski">
+    <meta name="description" content="W przypadku próby zainstalowania systemu Windows z dysku USB może pojawić się następujący błąd - Instalator nie mógł utworzyć nowej partycji systemowej...">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+  <body>
+    <div class="container pb-4 border-left-right wide">
+      <header class="pb-2">
+          <div class="page-title">
+              <a href="/">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-code-slash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z"/>
+                    </svg>
+                  <div class="inftechall">inftechall</div><div class="pl">.pl</div>
+                  <h1 id="demo"></h1>
+              </a>
+          </div><div class="category-navigation pt-2">
+    <nav class="nav justify-content-between">
+        <a href="/category/android.html">Android</a>
+        <a href="/category/c_sharp.html">C#</a>
+        <a href="/category/windows.html">Microsoft Windows</a>
+        <a href="/category/office.html">Office</a>
+        <a href="/category/przegladarki-internetowe.html">Przeglądarki Internetowe</a>
+        <a href="/category/siec-i-internet.html">Sieć i Internet</a>
+        <a href="/category/software.html">Software</a>
+        <a href="/category/wordpress.html">WordPress</a>
+    </nav>
+</div>
+</header><main class="container">
+          <div class="row row-post">
+          <!-- main page -->
+            <div class="col-md-9 main-main">
+                  <h1>[rozwiązanie] Instalator nie mógł utworzyć nowej partycji systemowej</h1>
+<p>
+  <div class="post-meta">
+      <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+          <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+      </svg>
+      29 Dec 2017
+      </div>
+
+  <div class="post-meta">
+      <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-table" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+      </svg>
+      Microsoft Windows
+  </div>
+</p>
+
+<span>[
+  
+    
+    <a href="/tag/błędy"><code class="tags-post">#błędy</code>&nbsp;</a>
+  
+    
+    <a href="/tag/diskpart"><code class="tags-post">#diskpart</code>&nbsp;</a>
+  
+    
+    <a href="/tag/Windows"><code class="tags-post">#Windows</code>&nbsp;</a>
+  
+]</span>
+
+<div class="post-content">
+  <p>W przypadku próby zainstalowania systemu Windows z dysku USB, dysku zewnętrznego itp. <!--more--> może pojawić się następujący błąd:  <strong><em>Instalator nie mógł utworzyć nowej partycji systemowej ani zlokalizować istniejącej partycji systemowej.</em></strong></p>
+
+<p><a href="#przyczyny">1. Przyczyny tego błędu</a><br />
+<a href="#rozw">2. Rozwiązanie</a><br />
+<a href="#usb">  2.1 Wysuń i ponownie włóż USB</a><br />
+<a href="#diskpart">  2.2 Jak ręcznie utworzyć partycje rozruchową</a><br />
+<a name="przyczyny"></a></p>
+
+<h3 id="przyczyny-tego-błędu">Przyczyny tego błędu</h3>
+
+<p>Podczas instalacji system Windows musi określić, który dysk jest głównym dyskiem rozruchowym, aby poprawnie skonfigurować główny rekord rozruchowy i program rozruchowy.</p>
+
+<p><a href="/assets/uploads/2017/12/windows-setup.png"><img loading="lazy" class="img-fluid" src="/assets/uploads/2017/12/windows-setup.png" alt="Instalator nie mógł utworzyć nowej partycji systemowej" width="631" height="469" /></a></p>
+
+<p>W zależności od konfiguracji komputera i używanego sprzętu konfiguracja systemu Windows może nie być w stanie określić, który dysk jest napędem zewnętrznym USB, a który to dysk lokalny, do którego powinien być zainstalowany system Windows. Dzieje się tak zwłaszcza w przypadku używania większych dysków USB do zainstalowania systemu Windows lub jeśli system BIOS został skonfigurowany tak, aby zawsze uruchamiał się z dysku USB. Ponadto niektóre pendrive USB pojawiają się w systemie Microsoft Windows jako zwykły dysk, zamiast identyfikować go jako rozruchowy port USB.<br />
+<a name="rozw"></a><br />
+<a name="usb"></a></p>
+
+<h3 id="1-wysuń-i-ponownie-włóż-usb">[1] Wysuń i ponownie włóż USB</h3>
+
+<p>Jednym ze sposobów na rozwiązanie tego problemu jest zmuszenie systemu Windows do ponownego uporządkowania kolejności dysków.</p>
+
+<ol>
+  <li>Po wyświetleniu komunikatu o błędzie <em>„Instalator nie może utworzyć nowej partycji systemowej lub zlokalizować istniejącej partycji systemowej”</em>, wyjmij urządzenie USB z komputera. Naciśnij czerwony przycisk <span style="color: #ff0000;"><em>„X”</em></span>, aby wyjść z kreatora instalacji. Naciśnij przycisk <em>„OK”</em>, aby potwierdzić opuszczenie kreatora.</li>
+  <li>Następnie wróć na stronę główną konfiguracji, wybierz <em>„Zainstaluj teraz”</em> bez włożonej pamięci USB.</li>
+  <li>Pojawi się komunikat o błędzie, że system Windows nie może zlokalizować plików instalacyjnych i prosi o załadowanie sterownika CD/DVD do instalacji systemu Windows.</li>
+  <li>Kliknij <em>„OK”</em>, a następnie wyjdź z okna konfiguracji, aby powrócić do głównego ekranu konfiguracji.</li>
+  <li>Włóż pamięć USB, a następnie ponownie wybierz <em>„Zainstaluj teraz”</em>.</li>
+</ol>
+
+<p>Tym razem wszystko powinno przebiegać zgodnie z planem, ponieważ System Windows ponownie wykryje dostępne dyski i właściwie zidentyfikuje napęd rozruchowy, aby zainstalować pliki rozruchowe systemu Windows.</p>
+
+<p><a name="diskpart"></a></p>
+
+<h3 id="2-jak-ręcznie-utworzyć-partycje-rozruchową">[2] Jak ręcznie utworzyć partycje rozruchową</h3>
+
+<p>Aby ręcznie utworzyć partycję rozruchową, należy użyć narzędzia <em>diskpart</em> z wiersza poleceń instalacji systemu Windows, w celu skopiowania plików instalacyjnych z USB na dysk lokalny. Umożliwi to użycie napędu lokalnego do rozruchu i instalacji systemu. W tym celu:</p>
+
+<ol>
+  <li>Naciśnij <em>Shift + F10</em> w oknie dialogowym, w którym pojawi się komunikat o błędzie, aby wyświetlić konsolę wiersza poleceń.</li>
+  <li>W konsoli wpisz <code class="language-plaintext highlighter-rouge">diskpart.exe</code> i naciśnij <em>enter</em>.</li>
+  <li>Następnie w narzędziu <em>diskpart</em> wpisz:
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">list disk</code> (w celu uzyskania informacji, na którym dysku chcesz zainstalować system Windows)</li>
+      <li><code class="language-plaintext highlighter-rouge">select disk 0</code> (gdzie dysk 0 jest napędem, na którym zostanie zainstalowany system Windows; wszystkie informacje na tym dysku zostaną usunięte)</li>
+      <li><code class="language-plaintext highlighter-rouge">create partition primary size = 5000</code> (gdzie 5000 – jest rozmiarem nowej partycji)</li>
+      <li><code class="language-plaintext highlighter-rouge">select partition 1</code></li>
+      <li><code class="language-plaintext highlighter-rouge">active</code></li>
+      <li><code class="language-plaintext highlighter-rouge">format fs=ntfs quick</code></li>
+      <li><code class="language-plaintext highlighter-rouge">assign</code></li>
+      <li><code class="language-plaintext highlighter-rouge">exit</code></li>
+    </ol>
+  </li>
+  <li>Przejdź do napędu USB, używając polecenia: <code class="language-plaintext highlighter-rouge">cd d:</code></li>
+  <li>Skopiuj pliki z napędu USB na utworzony dysk C: <code class="language-plaintext highlighter-rouge">xcopy d: c: /e /h /k</code></li>
+  <li>Utwórz dysk rozruchowy za pomocą następującego polecenia: <code class="language-plaintext highlighter-rouge">bootsect /nt60 c: bootsect /nt60 c: /mbr</code></li>
+  <li>Wyjmij napęd USB z komputera i uruchom go ponownie</li>
+  <li>Uruchom system Windows i wybierz <em>„Zainstaluj teraz”</em></li>
+</ol>
+   
+</div>   
+            </div>
+            
+            <div class="col-md-3 widget">
+              <div class="tags">
+                <p class="widget-title">TAGS</p>
+                <p><div class="widget-tags">
+     
+    
+             
+
+                <a href="/tag/adware"><p class="tag">adware</p></a>
+
+             
+
+                <a href="/tag/android"><p class="tag">android</p></a>
+
+             
+
+                <a href="/tag/backup"><p class="tag">backup</p></a>
+
+             
+
+                <a href="/tag/bios"><p class="tag">bios</p></a>
+
+             
+
+                <a href="/tag/blue_screen"><p class="tag">blue_screen</p></a>
+
+             
+
+                <a href="/tag/Browsers"><p class="tag">Browsers</p></a>
+
+             
+
+                <a href="/tag/błędy"><p class="tag">błędy</p></a>
+
+             
+
+                <a href="/tag/c_sharp"><p class="tag">c_sharp</p></a>
+
+             
+
+                <a href="/tag/CD"><p class="tag">CD</p></a>
+
+             
+
+                <a href="/tag/CDBurnerXP"><p class="tag">CDBurnerXP</p></a>
+
+             
+
+                <a href="/tag/Chrome"><p class="tag">Chrome</p></a>
+
+             
+
+                <a href="/tag/cmd"><p class="tag">cmd</p></a>
+
+             
+
+                <a href="/tag/diagnostyka_pamięci"><p class="tag">diagnostyka_pamięci</p></a>
+
+             
+
+                <a href="/tag/diskpart"><p class="tag">diskpart</p></a>
+
+             
+
+                <a href="/tag/DISM"><p class="tag">DISM</p></a>
+
+             
+
+                <a href="/tag/dll"><p class="tag">dll</p></a>
+
+             
+
+                <a href="/tag/drukarki"><p class="tag">drukarki</p></a>
+
+             
+
+                <a href="/tag/DVD"><p class="tag">DVD</p></a>
+
+             
+
+                <a href="/tag/excel"><p class="tag">excel</p></a>
+
+             
+
+                <a href="/tag/Exif"><p class="tag">Exif</p></a>
+
+             
+
+                <a href="/tag/Firefox"><p class="tag">Firefox</p></a>
+
+             
+
+                <a href="/tag/HDD_Raw_Copy_Tool"><p class="tag">HDD_Raw_Copy_Tool</p></a>
+
+             
+
+                <a href="/tag/Informacje_o_systemie"><p class="tag">Informacje_o_systemie</p></a>
+
+             
+
+                <a href="/tag/instalacja_Windows_8"><p class="tag">instalacja_Windows_8</p></a>
+
+             
+
+                <a href="/tag/ISO"><p class="tag">ISO</p></a>
+
+             
+
+                <a href="/tag/klonowanie_karty_SD"><p class="tag">klonowanie_karty_SD</p></a>
+
+             
+
+                <a href="/tag/Konto_użytkownika"><p class="tag">Konto_użytkownika</p></a>
+
+             
+
+                <a href="/tag/kopia_zapasowa"><p class="tag">kopia_zapasowa</p></a>
+
+             
+
+                <a href="/tag/LibreOffice"><p class="tag">LibreOffice</p></a>
+
+             
+
+                <a href="/tag/macierz"><p class="tag">macierz</p></a>
+
+             
+
+                <a href="/tag/Memory_Diagnostic"><p class="tag">Memory_Diagnostic</p></a>
+
+             
+
+                <a href="/tag/Menedżer_urządzeń"><p class="tag">Menedżer_urządzeń</p></a>
+
+             
+
+                <a href="/tag/metadane"><p class="tag">metadane</p></a>
+
+             
+
+                <a href="/tag/Mozilla"><p class="tag">Mozilla</p></a>
+
+             
+
+                <a href="/tag/msconfig"><p class="tag">msconfig</p></a>
+
+             
+
+                <a href="/tag/msinfo32"><p class="tag">msinfo32</p></a>
+
+             
+
+                <a href="/tag/nagraj_obraz_ISO"><p class="tag">nagraj_obraz_ISO</p></a>
+
+             
+
+                <a href="/tag/naprawa_systemu_Windows"><p class="tag">naprawa_systemu_Windows</p></a>
+
+             
+
+                <a href="/tag/narzędzie_konfiguracji_systemu"><p class="tag">narzędzie_konfiguracji_systemu</p></a>
+
+             
+
+                <a href="/tag/nieznane_urządzenie"><p class="tag">nieznane_urządzenie</p></a>
+
+             
+
+                <a href="/tag/ocx"><p class="tag">ocx</p></a>
+
+             
+
+                <a href="/tag/Odzyskanie_sesji"><p class="tag">Odzyskanie_sesji</p></a>
+
+             
+
+                <a href="/tag/office"><p class="tag">office</p></a>
+
+             
+
+                <a href="/tag/ole"><p class="tag">ole</p></a>
+
+             
+
+                <a href="/tag/pamięć_ram"><p class="tag">pamięć_ram</p></a>
+
+             
+
+                <a href="/tag/pasek_zadań"><p class="tag">pasek_zadań</p></a>
+
+             
+
+                <a href="/tag/path"><p class="tag">path</p></a>
+
+             
+
+                <a href="/tag/pdf"><p class="tag">pdf</p></a>
+
+             
+
+                <a href="/tag/przywracanie_systemu"><p class="tag">przywracanie_systemu</p></a>
+
+             
+
+                <a href="/tag/RAM"><p class="tag">RAM</p></a>
+
+             
+
+                <a href="/tag/ramdysk"><p class="tag">ramdysk</p></a>
+
+             
+
+                <a href="/tag/regedit"><p class="tag">regedit</p></a>
+
+             
+
+                <a href="/tag/regsvr32"><p class="tag">regsvr32</p></a>
+
+             
+
+                <a href="/tag/root"><p class="tag">root</p></a>
+
+             
+
+                <a href="/tag/sfc"><p class="tag">sfc</p></a>
+
+             
+
+                <a href="/tag/sieć_i_internet"><p class="tag">sieć_i_internet</p></a>
+
+             
+
+                <a href="/tag/sterowniki"><p class="tag">sterowniki</p></a>
+
+             
+
+                <a href="/tag/usb"><p class="tag">usb</p></a>
+
+             
+
+                <a href="/tag/Web_browser"><p class="tag">Web_browser</p></a>
+
+             
+
+                <a href="/tag/Windows"><p class="tag">Windows</p></a>
+
+             
+
+                <a href="/tag/Windows_8"><p class="tag">Windows_8</p></a>
+
+             
+
+                <a href="/tag/Windows_XP"><p class="tag">Windows_XP</p></a>
+
+             
+
+                <a href="/tag/WWW"><p class="tag">WWW</p></a>
+
+             
+
+                <a href="/tag/youtube"><p class="tag">youtube</p></a>
+
+            
+            
+</div></p>
+              </div>
+              
+            </div>
+          </div>
+        </main>
+    </div><footer class="footer">
+    <div class="container">
+        <nav class="footer-navigation">
+            <a class="nav-border-right" href="/" >Strona główna</a>
+            <a class="nav-border-right" href="/about.html" >About</a>
+            <a href="/kontakt.html" >Kontakt</a>
+        </nav>
+        <p class="footer-credits">Copyrights © 2016-2020 <a href="/">inftechall.pl</a></p>
+        <a class="footer-back-to-top" href="#">Back to top</a>
+    </div>
+</footer><script src="/assets/scripts/main.js"></script>
+  
+  </body>
+</html>

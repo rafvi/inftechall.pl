@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Błędy STOP: Blue Screen (część-1) | inftechall</title>
+
+    <meta name="author" content="Rafał Marzewski">
+    <meta name="description" content="Blue Screen of Death (BSoD, ang. Niebieski ekran śmierci) to objaw poważnego błędu systemu operacyjnego Microsoft Windows lub uruchomionej w nim aplikacji">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+  <body>
+    <div class="container pb-4 border-left-right wide">
+      <header class="pb-2">
+          <div class="page-title">
+              <a href="/">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-code-slash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z"/>
+                    </svg>
+                  <div class="inftechall">inftechall</div><div class="pl">.pl</div>
+                  <h1 id="demo"></h1>
+              </a>
+          </div><div class="category-navigation pt-2">
+    <nav class="nav justify-content-between">
+        <a href="/category/android.html">Android</a>
+        <a href="/category/c_sharp.html">C#</a>
+        <a href="/category/windows.html">Microsoft Windows</a>
+        <a href="/category/office.html">Office</a>
+        <a href="/category/przegladarki-internetowe.html">Przeglądarki Internetowe</a>
+        <a href="/category/siec-i-internet.html">Sieć i Internet</a>
+        <a href="/category/software.html">Software</a>
+        <a href="/category/wordpress.html">WordPress</a>
+    </nav>
+</div>
+</header><main class="container">
+          <div class="row row-post">
+          <!-- main page -->
+            <div class="col-md-9 main-main">
+                  <h1>Błędy STOP: Blue Screen (część-1)</h1>
+<p>
+  <div class="post-meta">
+      <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+          <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+      </svg>
+      15 Feb 2014
+      </div>
+
+  <div class="post-meta">
+      <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-table" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+      </svg>
+      Microsoft Windows
+  </div>
+</p>
+
+<span>[
+  
+    
+    <a href="/tag/blue_screen"><code class="tags-post">#blue_screen</code>&nbsp;</a>
+  
+    
+    <a href="/tag/błędy"><code class="tags-post">#błędy</code>&nbsp;</a>
+  
+    
+    <a href="/tag/Windows_XP"><code class="tags-post">#Windows_XP</code>&nbsp;</a>
+  
+]</span>
+
+<div class="post-content">
+  <h2 id="lista-błędów-blue-screen">Lista błędów „Blue Screen”:</h2>
+<!--more-->
+<p><strong>0x0000001E KMODE_EXCEPTION_NOT_HANDLED</strong></p>
+
+<p>Jądro <a title="Windows XP editions" href="http://en.wikipedia.org/wiki/Windows_XP_editions" target="_blank" rel="wikipedia">Windows XP Professional</a> wykryło nieprawidłową lub nieznaną instrukcję procesora. Winę ponosi źle napisane oprogramowanie, system Windows przechwytuje jego błędy.</p>
+
+<p><strong>0x0000000A IRQL_NOT_LESS_OR_EQUAL</strong></p>
+
+<p>Jądro systemu bądź jakiś sterownik próbował uzyskać dostęp do obszaru pamięci, do którego nie miał pozwolenia. Błąd często powodowany przez uszkodzony lub nieprawidłowo  zainstalowany sprzęt.</p>
+
+<p><strong>0x00000024 <a title="NTFS" href="http://en.wikipedia.org/wiki/NTFS" target="_blank" rel="wikipedia">NTFS</a>_FILE_SYSTEM</strong></p>
+
+<p>Problemy ze sterownikami ntfs.sys uniemożliwiające dostęp do partycji z systemem plików NTFS. Podobny błąd 0x24 dotyczy systemów plików FAT16 i FAT32.</p>
+
+<p><strong>0x0000002E DATA_BUS_ERROR</strong></p>
+
+<p>Błąd parzystości pamięci, może dotyczyć pamięci RAM, cache L2, pamięci graficznej lub też błędów na dysku. Ma również miejsce gdy sterownik jakiegoś urządzenia próbuje uzyskać dostęp do nieistniejącego adresu pamięci.</p>
+
+<p><strong>0x0000003F NO_MORE_SYSTEM_PTES</strong></p>
+
+<p>Nie poprawne zarządzanie obszarem pamięci przez system (duża liczba wykonywanych operacji wejścia/wyjścia, uszkodzony sterownik urządzenia niepoprawnie zarządza pamięcią, próba alokacji zbyt dużego, ciągłego obszaru pamięci).</p>
+
+<p><strong>0x00000050 PAGE_FAULT_IN_NONPAGED_AREA</strong></p>
+
+<p>Oprogramowanie zażądało dostępu do danych, którego nie ma w pamięci lub podano nieprawidłowy adres pamięci. Przyczyną może być awaria pamięci lub błędne oprogramowanie.</p>
+
+<p><strong>0x00000077 KERNEL_STACK_INPAGE_ERROR</strong></p>
+
+<p>Żądany blok danych nie może być znaleziony w pliku wymiany i wczytany do pamięci. Błąd może spowodowany fizycznym uszkodzeniem dysku lub uszkodzeniem struktury danych w tym również infekcji wirusa.</p>
+
+<p><strong>0x0000007A KERNEL_DATA_INPAGE_ERROR</strong></p>
+
+<p>Błąd danych w pliku wymiany, spowodowany problemem z dyskiem lub kontrolerem.</p>
+
+<p><strong>0x0000007B INACCESSIBLE_BOOT_DEVICE</strong></p>
+
+<p>Podczas uruchomienia system Windows stracił dostęp do partycji systemowej. Najczęściej spowodowane niepoprawną instalacją sterowników lub zarażenie komputera złośliwym oprogramowaniem.</p>
+
+<p><strong>0x0000007F UNEXPECTED_KERNEL_MODE_TRAP</strong></p>
+
+<p>Ogólne błędy sprzętowe oraz programowe powstające na poziomie jądra systemu.</p>
+
+<p><strong>0x0000009F DRIVER_POWER_STATE_FAILURE</strong></p>
+
+<p>Nieprawidłowy stan zasilania urządzenia.</p>
+
+<p><strong>0x000000C2 BAD_POOL_CALLER</strong></p>
+
+<p>Niewłaściwie zbudowany program próbował uzyskać dostęp do pamięci w niedozwolony sposób (np. alokując zerowy obszar czy też zwalniając obszar pamięci, który już został zwolniony).</p>
+   
+</div>   
+            </div>
+            
+            <div class="col-md-3 widget">
+              <div class="tags">
+                <p class="widget-title">TAGS</p>
+                <p><div class="widget-tags">
+     
+    
+             
+
+                <a href="/tag/adware"><p class="tag">adware</p></a>
+
+             
+
+                <a href="/tag/android"><p class="tag">android</p></a>
+
+             
+
+                <a href="/tag/backup"><p class="tag">backup</p></a>
+
+             
+
+                <a href="/tag/bios"><p class="tag">bios</p></a>
+
+             
+
+                <a href="/tag/blue_screen"><p class="tag">blue_screen</p></a>
+
+             
+
+                <a href="/tag/Browsers"><p class="tag">Browsers</p></a>
+
+             
+
+                <a href="/tag/błędy"><p class="tag">błędy</p></a>
+
+             
+
+                <a href="/tag/c_sharp"><p class="tag">c_sharp</p></a>
+
+             
+
+                <a href="/tag/CD"><p class="tag">CD</p></a>
+
+             
+
+                <a href="/tag/CDBurnerXP"><p class="tag">CDBurnerXP</p></a>
+
+             
+
+                <a href="/tag/Chrome"><p class="tag">Chrome</p></a>
+
+             
+
+                <a href="/tag/cmd"><p class="tag">cmd</p></a>
+
+             
+
+                <a href="/tag/diagnostyka_pamięci"><p class="tag">diagnostyka_pamięci</p></a>
+
+             
+
+                <a href="/tag/diskpart"><p class="tag">diskpart</p></a>
+
+             
+
+                <a href="/tag/DISM"><p class="tag">DISM</p></a>
+
+             
+
+                <a href="/tag/dll"><p class="tag">dll</p></a>
+
+             
+
+                <a href="/tag/drukarki"><p class="tag">drukarki</p></a>
+
+             
+
+                <a href="/tag/DVD"><p class="tag">DVD</p></a>
+
+             
+
+                <a href="/tag/excel"><p class="tag">excel</p></a>
+
+             
+
+                <a href="/tag/Exif"><p class="tag">Exif</p></a>
+
+             
+
+                <a href="/tag/Firefox"><p class="tag">Firefox</p></a>
+
+             
+
+                <a href="/tag/HDD_Raw_Copy_Tool"><p class="tag">HDD_Raw_Copy_Tool</p></a>
+
+             
+
+                <a href="/tag/Informacje_o_systemie"><p class="tag">Informacje_o_systemie</p></a>
+
+             
+
+                <a href="/tag/instalacja_Windows_8"><p class="tag">instalacja_Windows_8</p></a>
+
+             
+
+                <a href="/tag/ISO"><p class="tag">ISO</p></a>
+
+             
+
+                <a href="/tag/klonowanie_karty_SD"><p class="tag">klonowanie_karty_SD</p></a>
+
+             
+
+                <a href="/tag/Konto_użytkownika"><p class="tag">Konto_użytkownika</p></a>
+
+             
+
+                <a href="/tag/kopia_zapasowa"><p class="tag">kopia_zapasowa</p></a>
+
+             
+
+                <a href="/tag/LibreOffice"><p class="tag">LibreOffice</p></a>
+
+             
+
+                <a href="/tag/macierz"><p class="tag">macierz</p></a>
+
+             
+
+                <a href="/tag/Memory_Diagnostic"><p class="tag">Memory_Diagnostic</p></a>
+
+             
+
+                <a href="/tag/Menedżer_urządzeń"><p class="tag">Menedżer_urządzeń</p></a>
+
+             
+
+                <a href="/tag/metadane"><p class="tag">metadane</p></a>
+
+             
+
+                <a href="/tag/Mozilla"><p class="tag">Mozilla</p></a>
+
+             
+
+                <a href="/tag/msconfig"><p class="tag">msconfig</p></a>
+
+             
+
+                <a href="/tag/msinfo32"><p class="tag">msinfo32</p></a>
+
+             
+
+                <a href="/tag/nagraj_obraz_ISO"><p class="tag">nagraj_obraz_ISO</p></a>
+
+             
+
+                <a href="/tag/naprawa_systemu_Windows"><p class="tag">naprawa_systemu_Windows</p></a>
+
+             
+
+                <a href="/tag/narzędzie_konfiguracji_systemu"><p class="tag">narzędzie_konfiguracji_systemu</p></a>
+
+             
+
+                <a href="/tag/nieznane_urządzenie"><p class="tag">nieznane_urządzenie</p></a>
+
+             
+
+                <a href="/tag/ocx"><p class="tag">ocx</p></a>
+
+             
+
+                <a href="/tag/Odzyskanie_sesji"><p class="tag">Odzyskanie_sesji</p></a>
+
+             
+
+                <a href="/tag/office"><p class="tag">office</p></a>
+
+             
+
+                <a href="/tag/ole"><p class="tag">ole</p></a>
+
+             
+
+                <a href="/tag/pamięć_ram"><p class="tag">pamięć_ram</p></a>
+
+             
+
+                <a href="/tag/pasek_zadań"><p class="tag">pasek_zadań</p></a>
+
+             
+
+                <a href="/tag/path"><p class="tag">path</p></a>
+
+             
+
+                <a href="/tag/pdf"><p class="tag">pdf</p></a>
+
+             
+
+                <a href="/tag/przywracanie_systemu"><p class="tag">przywracanie_systemu</p></a>
+
+             
+
+                <a href="/tag/RAM"><p class="tag">RAM</p></a>
+
+             
+
+                <a href="/tag/ramdysk"><p class="tag">ramdysk</p></a>
+
+             
+
+                <a href="/tag/regedit"><p class="tag">regedit</p></a>
+
+             
+
+                <a href="/tag/regsvr32"><p class="tag">regsvr32</p></a>
+
+             
+
+                <a href="/tag/root"><p class="tag">root</p></a>
+
+             
+
+                <a href="/tag/sfc"><p class="tag">sfc</p></a>
+
+             
+
+                <a href="/tag/sieć_i_internet"><p class="tag">sieć_i_internet</p></a>
+
+             
+
+                <a href="/tag/sterowniki"><p class="tag">sterowniki</p></a>
+
+             
+
+                <a href="/tag/usb"><p class="tag">usb</p></a>
+
+             
+
+                <a href="/tag/Web_browser"><p class="tag">Web_browser</p></a>
+
+             
+
+                <a href="/tag/Windows"><p class="tag">Windows</p></a>
+
+             
+
+                <a href="/tag/Windows_8"><p class="tag">Windows_8</p></a>
+
+             
+
+                <a href="/tag/Windows_XP"><p class="tag">Windows_XP</p></a>
+
+             
+
+                <a href="/tag/WWW"><p class="tag">WWW</p></a>
+
+             
+
+                <a href="/tag/youtube"><p class="tag">youtube</p></a>
+
+            
+            
+</div></p>
+              </div>
+              
+            </div>
+          </div>
+        </main>
+    </div><footer class="footer">
+    <div class="container">
+        <nav class="footer-navigation">
+            <a class="nav-border-right" href="/" >Strona główna</a>
+            <a class="nav-border-right" href="/about.html" >About</a>
+            <a href="/kontakt.html" >Kontakt</a>
+        </nav>
+        <p class="footer-credits">Copyrights © 2016-2020 <a href="/">inftechall.pl</a></p>
+        <a class="footer-back-to-top" href="#">Back to top</a>
+    </div>
+</footer><script src="/assets/scripts/main.js"></script>
+  
+  </body>
+</html>
