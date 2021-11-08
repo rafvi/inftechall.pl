@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+/* C o o k i e s */
+#cookie { display: block; z-index: 99999; min-height: 35px; width: 100%; position: fixed; background: #2b3643 none repeat scroll 0% 0%; border-image: none 100% / 1 / 0 stretch; border-top: 1px solid #a0b2c0; text-align: center; right: 0px; color: #777777; bottom: 0px; left: 0px; border-color: #a0b2c0; border-radius: 0px; }
+
+#cookie-test { padding: 10px; margin-left: 15px; margin-right: 15px; font-size: 14px; font-weight: normal; }
+
+.cookie-more { color: #0056b3; letter-spacing: 2px; }
+
+.cookie-more:hover { text-decoration: underline; }
+
+#cookie-btn-ok { letter-spacing: 2px; position: absolute; background: #2577b7 none repeat scroll 0% 0%; color: white; padding: 5px 15px; text-decoration: none; font-size: 12px; font-weight: normal; border: 0px solid #2b3643; border-radius: 0px; top: 5px; right: 5px; }
+
+#cookie-btn-ok:hover { text-decoration: underline; font-weight: bold; }
+
 /* G e n e r a l   s t y l e s */
 @media (min-width: 1280px) { .container, .container-lg, .container-md, .container-sm, .container-xl .wide { max-width: 1220px !important; } }
 
