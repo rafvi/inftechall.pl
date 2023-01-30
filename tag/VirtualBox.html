@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Jak naprawić błędy brakujących plików DLL? | inftechall</title>
+  <title>Tag: VirtualBox | inftechall</title>
 
   <meta name="author" content="Rafał Marzewski">
   <meta name="description"
-    content="Kilka sposobów na naprawienie błędów związanych z brakiem plików DLL na komputerze z systemem Windows 10/8/7.">
+    content="Blog technologiczny zawierający samouczki i przewodniki dotyczące rozwiązywania problemów związanych ze sprzętem komputerowym i oprogramowaniem.">
 
   <link rel="stylesheet" href="/assets/css/styles.css">
 
@@ -85,92 +85,17 @@
         <div class="row row-post">
           <!-- main page -->
           <div class="col-md-9 main-main">
-            <h1>Jak naprawić błędy brakujących plików DLL?</h1>
-<p>
-  <div class="post-meta">
-    <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd"
-        d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
-    <path fill-rule="evenodd"
-        d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-</svg>
-    23 Nov 2022
-  </div>
-
-  <div class="post-meta">
-    <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-table" fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd"
-        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
-</svg>
-    Microsoft Windows
-  </div>
-</p>
-
-<span>[
-  
-  
-  <a href="/tag/dll"><code class="tags-post">#dll</code>&nbsp;</a>
-  
-  
-  <a href="/tag/Windows"><code class="tags-post">#Windows</code>&nbsp;</a>
-  
-  
-  <a href="/tag/regsvr32"><code class="tags-post">#regsvr32</code>&nbsp;</a>
-  
-  
-  <a href="/tag/DISM"><code class="tags-post">#DISM</code>&nbsp;</a>
-  
-  
-  <a href="/tag/sfc"><code class="tags-post">#sfc</code>&nbsp;</a>
-  
-  ]</span>
-
-<div class="post-content">
-  <p><strong>DLL</strong> (<em>z ang. Dynamic-Link Library</em> – <a href="https://pl.wikipedia.org/wiki/Biblioteka_dynamiczna" target="_blank" rel="noreferrer noopener">biblioteka łączona dynamicznie</a>) jest zewnętrzną częścią aplikacji działających w systemie Windows 10/8/7 lub dowolnym innym systemie operacyjnym.<!--more--> Większość aplikacji zapisuje kod w wielu różnych plikach i w razie potrzebny jest on ładowany do pamięci, a następnie wykorzystywany. W przypadku braku odpowiedniego pliku DLL lub gdy plik jest uszkodzony, może pojawić się komunikat o jego braku.</p>
-
-<p>Jednym z problemów może być brak odnalezienia pliku <strong>.dll</strong>. W takim przypadku można spróbować naprawić błąd podejmując odpowiednie kroki zaprezentowane w dalszej części materiału.</p>
-
-<h3 id="błąd-brakujących-plików-dll">Błąd brakujących plików DLL</h3>
-<p>Poniżej kilka sposobów na naprawienie błędów związanych z brakiem plików DLL na komputerze z systemem Windows 10/8/7:</p>
-<ol>
-  <li>Uruchom wbudowane narzędzie <a href="/windows/sfc" title="Jak użyć SFC.exe (System File Checker)">System File Checker (SFC)</a> w celu skanowania oraz naprawy uszkodzonych plików systemu operacyjnego.</li>
-  <li>Uruchom narzędzie <a href="/windows/dism-online-cleanup-image/" title="DISM Online Cleanup Image">DISM (Deployment Image Servicing and Management)</a> do naprawy obrazu systemu Windows, sprawdzania integralności plików systemu operacyjnego, naprawy plików systemowych, które są uszkodzone lub zmodyfikowane.</li>
-  <li>Napraw bądź przeinstaluj ponownie aplikację, której dotyczy błąd.</li>
-  <li>Skopiuj plik <strong>DLL</strong> z innego systemu.</li>
-</ol>
-
-<h4 id="ad-1-system-file-checker-sfc">Ad 1. System File Checker (SFC)</h4>
-<p>Najbezpieczniejszym sposobem naprawienia brakujących lub uszkodzonych plików DLL zgłaszanych przez system operacyjny Windows jest uruchomienie wbudowanego narzędzia <a href="/windows/sfc" title="Jak użyć SFC.exe (System File Checker)">SFC</a>, które uzupełni brakujące pliki lub zastąpi uszkodzone.</p>
-
-<p>W celu uruchomienia narzędzia <a href="/windows/sfc" title="Jak użyć SFC.exe (System File Checker)">SFC</a> należy uruchomić wiersz poleceń z uprawnieniami administratora. Możemy to zrobić klikając <em>Start -&gt; Uruchom… -&gt;</em> następnie w nowo otwartym oknie dialogowym wpisać <em>cmd</em> i kliknąć Enter.</p>
-
-<p>W oknie CMD wpisać, a następnie poprzez kliknięcie <em>Enter</em> wykonać następujące polecenie:</p>
-
-<pre class="pre-code">sfc /scannow</pre>
-
-<p>Po zatwierdzeniu polecenia rozpocznie się skanowanie systemu w poszukiwaniu problemów oraz automatyczne ich naprawienie. Po pomyślnym zakończeniu skanowania zalecane jest ponowne uruchomić komputer.</p>
-
-<p><a href="/assets/uploads/2022/12/sfc_scannow.png"><img loading="lazy" class="img-fluid post-thumbnail-size" src="/assets/uploads/2022/12/sfc_scannow.png" alt="sfc scannow" /></a></p>
-
-<h4 id="ad-2-dism-deployment-image-servicing-and-management">Ad 2. DISM (Deployment Image Servicing and Management)</h4>
-<p>W celu naprawy przy użyciu narzędzia <a href="/windows/dism-online-cleanup-image/" title="DISM Online Cleanup Image">DISM</a> ponownie w oknie wiersza z poziomem uprawnień administratora użyj następującego polecenia:</p>
-
-<pre class="pre-code">DISM /Online /Cleanup-Image /RestoreHealth</pre>
-
-<p>Polecenie sprawdza, czy któryś ze składników systemu Windows nie jest uszkodzony i w razie potrzeby przywraca prawidłowe wersje. Po pomyślnym zakończeniu również zalecane jest ponowne uruchomienie komputera.</p>
-
-<p><a href="/assets/uploads/2022/12/DISM_RestoreHealth.png"><img loading="lazy" class="img-fluid post-thumbnail-size" src="/assets/uploads/2022/12/DISM_RestoreHealth.png" alt="DISM RestoreHealth" /></a></p>
-
-<h4 id="ad-3-ponowna-instalacja-aplikacji">Ad 3. Ponowna instalacja aplikacji</h4>
-<p>Jeśli problem dotyczy bezpośrednio oprogramowania lub aplikacji, wystarczające może się okazać ponownie zainstalowanie oprogramowania. Aplikację powodującą błąd  można odinstalować z Panelu sterowania, ponownie uruchomić komputer, a następnie ponownie zainstalować oprogramowanie. Można również spróbować naprawić program, jeśli oprogramowanie oferuje opcję <em>Napraw program</em>.</p>
-
-<h4 id="ad-4-plik-dll">Ad 4. Plik DLL</h4>
-<p>Spróbuj skopiować brakujący lub uszkodzony plik DLL z innego komputera i wkleić go w odpowiednim katalogu. Może być konieczne ponowne zarejestrowanie biblioteki DLL.
-Rejestrowanie lub wyrejestrowywanie kontrolek biblioteki DLL można wykonać przy użyciu narzędzia <a href="/windows/ponowna-rejestracja-pliku-dll-lub-ocx-w-systemie-windows-7-8-10" title="Ponowna rejestracja pliku DLL lub OCX w systemie Windows 7/8/10">Regsvr32</a> wywoływanego z wiersza poleceń.</p>
-
+            <div class="post">
+  <h1>Tag: VirtualBox</h1>
+  <ul class="tags-list">
+    
+    <li><a href="/software/jak-właczyc-USB-w-virtualbox">Jak włączyć USB w Oracle VM VirtualBox?</a> (08 Nov 2022)<br>
+      Jak włączyć obsługę USB w Oracle VM VirtualBox.
+    </li>
+    
+  </ul>
 </div>
+<hr>
           </div>
 
           <div class="col-md-3 widget">
