@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Jak korzystać z msconfig (System Configuration Utility) | inftechall</title>
+  <title>Tag: AppImage | inftechall</title>
 
   <meta name="author" content="Rafał Marzewski">
   <meta name="description"
-    content="Narzędzie msconfig pozwala użytkownikom skonfigurować sposób uruchamiania komputera oraz wybór programów lub usług ładowanych automatycznie przy każdym uruchomieniu komputera.">
+    content="Blog technologiczny zawierający samouczki i przewodniki dotyczące rozwiązywania problemów związanych ze sprzętem komputerowym i oprogramowaniem.">
 
   <link rel="stylesheet" href="/assets/css/styles.css">
 
@@ -85,112 +85,17 @@
         <div class="row row-post">
           <!-- main page -->
           <div class="col-md-9 main-main">
-            <h1>Jak korzystać z msconfig (System Configuration Utility)</h1>
-<p>
-  <div class="post-meta">
-    <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd"
-        d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
-    <path fill-rule="evenodd"
-        d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-</svg>
-    02 May 2015
-  </div>
-
-  <div class="post-meta">
-    <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-table" fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd"
-        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
-</svg>
-    Microsoft Windows
-  </div>
-</p>
-
-<span>[
-  
-  
-  <a href="/tag/msconfig"><code class="tags-post">#msconfig</code>&nbsp;</a>
-  
-  
-  <a href="/tag/narzędzie_konfiguracji_systemu"><code class="tags-post">#narzędzie_konfiguracji_systemu</code>&nbsp;</a>
-  
-  
-  <a href="/tag/Windows"><code class="tags-post">#Windows</code>&nbsp;</a>
-  
-  ]</span>
-
-<div class="post-content">
-  <p>Narzędzie <strong>msconfig</strong> pozwala użytkownikom skonfigurować sposób uruchamiania komputera oraz wybór programów lub usług ładowanych automatycznie przy każdym uruchomieniu komputera.<!--more--> Jest szczególnie pomocne w identyfikacji problemów, które mogą mieć wpływ na poprawne uruchamianie systemu Windows. W przypadku chęci odnalezienia programu lub usługi powodującej problem możemy je pojedynczo  wyłączyć i włączyć uruchamiając przy tym ponownie komputer. W przypadku gdy brak problemu z wyłączoną usługą, a z włączoną taki się pojawia przy ponownym uruchomieniu komputera oznacza to że to ona powoduje błąd.</p>
-
-<h1 id="jak-otworzyć-msconfig">Jak otworzyć msconfig</h1>
-
-<p>Narzędzie możemy uruchomić na dwa sposoby:</p>
-
-<ol>
-  <li>
-    <p>Poprzez konsole <i>Uruchom…</i>, w tym celu należy kliknąć przycisk <i>Start</i>, a następnie <i>Uruchom…</i>. W nowo otwartym oknie wpisujemy: <i>msconfig</i> i zatwierdzamy klikając <i>OK</i>.</p>
-    <p><a href="/assets/uploads/2015/05/run.png"><img loading="lazy" class="img-fluid" src="/assets/uploads/2015/05/run.png" alt="run-msconfig" /></a></p>
-  </li>
-  <li>
-    <p>Klikając przycisk <i>Start</i>, polecenie <i>Panel sterowania</i>, pozycję <i>System i zabezpieczenia</i>, a następnie pozycję <i>Narzędzia administracyjne</i>. Wybieramy pozycję  Konfiguracja systemu (jeśli Kontrola Konta Użytkownika (UAC) monituje o pozwolenie kliknij przycisk <i>Kontynuuj</i>).</p>
-  </li>
-</ol>
-
-<h1 id="opis-narzędzia-msconfig">Opis narzędzia msconfig</h1>
-
-<p><a href="#ogolne">Ogólne</a><br />
-<a href="#rozruch">Rozruch</a><br />
-<a href="#uslugi">Usługi</a><br />
-<a href="#uruchamianie">Uruchamianie</a><br />
-<a href="#narzedzia">Narzędzia</a><br />
-<a name="ogolne"></a></p>
-
-<h2 id="zakładka-ogólne">Zakładka Ogólne</h2>
-
-<p>Domyślnie otwierana zakładka, która ogólne pokazuje jak zostanie uruchomiony system Windows. Konfiguracja przewiduje trzy tryby uruchamiania:</p>
-
-<p><a href="/assets/uploads/2015/05/general-tab.png"><img loading="lazy" class="img-fluid" src="/assets/uploads/2015/05/general-tab.png" alt="general-tab" /></a></p>
-
-<ol>
-  <li>Uruchamianiem normalne.</li>
-  <li>Diagnostyczne, uruchamianie systemu Windows tylko z podstawowymi sterownikami i usługami</li>
-  <li>Selektywne podobnie jak w diagnostycznym system uruchamiany z podstawowymi sterownikami oraz dodatkowo z innymi wybranymi usługami i programami.</li>
-</ol>
-
-<p><a name="rozruch"></a></p>
-
-<h2 id="zakładka-rozruch">Zakładka Rozruch</h2>
-
-<p><a href="/assets/uploads/2015/05/boot-tab.png"><img loading="lazy" class="img-fluid" src="/assets/uploads/2015/05/boot-tab.png" alt="boot-tab" /></a></p>
-
-<p>Zakładka Rozruch pozwala na wykonywanie tych samych ustawień, które można dokonać w pliku <em>boot.ini</em> systemu Windows bez konieczności edycji pliku. W opcjach zaawansowanych można ustawić takie parametry jak liczba procesorów używanych podczas startu, maksymalną ilość pamięci i inne opcje diagnostyczne.</p>
-
-<p>Na karcie Rozruch istnieje możliwość wyboru opcji uruchamiania systemu wraz z tworzeniem dziennika rozruchu. Po uruchomieniu systemu ponownie na partycji systemowej domyślnie <em>C:\Windows</em> znajdziemy plik <em>ntbtlog.txt</em> zawierający listę wszystkich załadowanych sterowników. Umożliwia on analizę procesu rozruchu np. w przypadku znalezienia sterownika powodującego błędy.<br />
-<a name="uslugi"></a></p>
-
-<h2 id="zakładka-usługi">Zakładka Usługi</h2>
-
-<p><a href="/assets/uploads/2015/05/services-tab.png"><img loading="lazy" class="img-fluid" src="/assets/uploads/2015/05/services-tab.png" alt="services-tab" /></a></p>
-
-<p>Karta wyświetla wszystkie usługi, które są uruchamiane przy uruchomieniu komputera wraz z ich bieżącym stanem (Uruchomiono lub Zatrzymano). Karta Usługi pozwala włączyć lub wyłączyć każdą z usług podczas uruchamiania komputera. Zaznaczając pole <em>Ukryj wszystkie usługi firmy Microsoft</em> na dole okna wyświetlone zostaną tylko usługi innych producentów.<br />
-<a name="uruchamianie"></a></p>
-
-<h2 id="zakładka-uruchamianie">Zakładka Uruchamianie</h2>
-
-<p><a href="/assets/uploads/2015/05/startup-tab.png"><img loading="lazy" class="img-fluid" src="/assets/uploads/2015/05/startup-tab.png" alt="startup-tab" /></a></p>
-
-<p>Zakładka Uruchamianie jest jedną z najpopularniejszych konfiguracji <em>msconfig</em>. Znajduje się tu lista programów uruchamianych podczas rozruchu systemu Windows wraz z nazwą wydawcy, ścieżką do pliku wykonywalnego i lokalizacją klucza rejestru. Jeśli któraś z aplikacji powoduje powolny start środowiska Windows, tutaj możemy ją wyłączyć z procesu startowego.<br />
-<a name="narzedzia"></a></p>
-
-<h2 id="zakładka-narzędzia">Zakładka Narzędzia</h2>
-
-<p><a href="/assets/uploads/2015/05/tools-tab.png"><img loading="lazy" class="img-fluid" src="/assets/uploads/2015/05/tools-tab.png" alt="tools-tab" /></a></p>
-
-<p>Umożliwia dostęp do licznych programów pomocniczych sytemu takich jak np. Właściwości systemu, , Wiersz poleceń, Edytor rejestru, Przywracanie systemu i wiele innych. W przypadku gdy nie znamy bezpośredniego polecenia wywołania danej usługi, wystarczy w oknie <em>msconfig</em> zaznaczyć wybraną pozycje na liście i kliknąć przycisk <em>Uruchom</em>.</p>
-
+            <div class="post">
+  <h1>Tag: AppImage</h1>
+  <ul class="tags-list">
+    
+    <li><a href="/linux/jak-uruchomic-appimage-w-systemie-linux">Jak uruchomić .AppImage w systemie Linux</a> (02 Feb 2023)<br>
+      AppImage to uniwersalny format pakietu oprogramowania, który można uruchomić w systemie Linux bez przechodzenia przez tradycyjny sposób instalacji.
+    </li>
+    
+  </ul>
 </div>
+<hr>
           </div>
 
           <div class="col-md-3 widget">
