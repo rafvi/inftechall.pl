@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>c_sharp | inftechall</title>
+  <title>40 poleceń terminala LINUX | inftechall</title>
 
   <meta name="author" content="Rafał Marzewski">
   <meta name="description"
-    content="Blog technologiczny zawierający samouczki i przewodniki dotyczące rozwiązywania problemów związanych ze sprzętem komputerowym i oprogramowaniem.">
+    content="Zestaw 40 komend (poleceń), przydatncyh podczas pracy z systemem operacyjnym Linux.">
 
   <link rel="stylesheet" href="/assets/css/styles.css">
 
@@ -85,209 +85,221 @@
         <div class="row row-post">
           <!-- main page -->
           <div class="col-md-9 main-main">
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="post">
-    <div class="row">
-        <div class="col-md-4 margin-auto">
-            <div class="post-header"><img class="img-thumbnail" src="/assets/thumbnail/path.jpg" loading="lazy" alt="path" /></div>
-        </div>
-        <div class="col-md-8">
-            <h2 class="post-title"><a href="/c_sharp/zmiana-sciezki-systemowej-w-winows/">Zmiana ścieżki systemowej w Winows dla kompilatora C#</a></h2>
-            <p>
-                <div class="post-meta">
-                    <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor"
+            <h1>40 poleceń terminala LINUX</h1>
+<p>
+  <div class="post-meta">
+    <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor"
     xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd"
         d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
     <path fill-rule="evenodd"
         d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
 </svg>
-                    21 Jun 2017
-                </div>
+    21 Mar 2023
+  </div>
 
-                <div class="post-meta">
-                    <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-table" fill="currentColor"
+  <div class="post-meta">
+    <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-table" fill="currentColor"
     xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd"
         d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
 </svg>
-                    <a class="category-post-link" href="/category/c_sharp.html">c_sharp</a>
-                </div>
-            </p>
-            <div class="post-content"><p>Jeśli zamierzamy używać kompilatora C # (csc.exe) w wierszu poleceń (cmd.exe) bez wpisywania pełnej ścieżki do niego musimy dodać miejsce zainstalowania .NET Framework do ścieżki systemowej Windows.</p>
+    Linux
+  </div>
+</p>
+
+<span>[
+  
+  
+  <a href="/tag/Linux"><code class="tags-post">#Linux</code>&nbsp;</a>
+  
+  
+  <a href="/tag/terminal"><code class="tags-post">#terminal</code>&nbsp;</a>
+  
+  ]</span>
+
+<div class="post-content">
+  <p>Oto 40 użytecznych i przydatnych poleceń systemu Linux wraz z przykładami użycia, które pomogą w łatwym, efektywnym i produktywnym wykonywaniu zadań.<!--more--></p>
+<h3 id="man">man</h3>
+<p><em>podręcznik systemowy</em></p>
+<pre class="pre-code">$ man ls <p class="pre-code-comment">-- wyświetla dokumentację polecenia 'ls'</p></pre>
+
+<h3 id="cd">cd</h3>
+<p><em>zmiana katalogu</em></p>
+<pre class="pre-code">
+$ cd /home/user/<p class="pre-code-comment">-- zmienia bieżący katalog na "/home/user/"</p>
+$ cd ..<p class="pre-code-comment">-- przechodzi do katalogu nadrzędnego</p>
+$ cd<p class="pre-code-comment">-- przechodzi do katalogu domowego użytkownika</p>
+$ cd -<p class="pre-code-comment">-- przechodzi do poprzedniego katalogu, który był bieżącym katalogiem</p>
+$ cd /<p class="pre-code-comment">-- przechodzi do katalogu głównego systemu plików (root)</p>
+</pre>
+
+<h3 id="ls">ls</h3>
+<p><em>wyświetlenie zawartości bieżącego katalogu</em></p>
+<pre class="pre-code">$ ls -l <p class="pre-code-comment">-- wyświetla listę plików i katalogów</p></pre>
+
+<h3 id="pwd">pwd</h3>
+<pre class="pre-code">$ pwd <p class="pre-code-comment">-- wyświetla ścieżkę do bieżącego katalogu</p></pre>
+
+<h3 id="mkdir">mkdir</h3>
+<p><em>tworzenie nowego katalogu</em></p>
+<pre class="pre-code">
+$ mkdir Katalog <p class="pre-code-comment">-- tworzy nowy katalog o nazwie "Nowy Katalog </p>
+$ mkdir 'Nowy Katalog' <p class="pre-code-comment">-- w przypadku nazw zawierających białe znaki (SPACJA) należy umieść nazwę katalogu w "" lub ''</p>
+</pre>
+
+<h3 id="rmdir">rmdir</h3>
+<pre class="pre-code">$ rmdir Folder <p class="pre-code-comment">-- usuwa pusty katalog o nazwie "Folder"</p></pre>
+
+<h3 id="rm">rm</h3>
+<p><em>usuwanie pliku lub katalogu</em></p>
+<pre class="pre-code">
+$ rm file.txt <p class="pre-code-comment">-- usuwa plik o nazwie "file.txt"</p>
+$ rm -r Folder <p class="pre-code-comment">-- usuwa katalog o nazwie "Folder" oraz jego zawartość</p>
+</pre>
+
+<h3 id="touch">touch</h3>
+<pre class="pre-code">$ touch plik.txt <p class="pre-code-comment">-- tworzy nowy pusty plik o nazwie plik.txt</p></pre>
+
+<h3 id="cat">cat</h3>
+<p><em>wyświetlanie zawartości pliku</em></p>
+<pre class="pre-code">$ cat plik.txt <p class="pre-code-comment">-- wyświetla zawartość pliku o nazwie plik.txt</p></pre>
+
+<h3 id="cp">cp</h3>
+<p><em>kopiowanie pliku lub katalogu</em></p>
+<pre class="pre-code">$ cp plik.txt 'Nowy Katalog' <p class="pre-code-comment">-- kopiuje plik o nazwie "plik.txt" do katalogu "Nowy Katalog"</p></pre>
+
+<h3 id="mv">mv</h3>
+<p><em>przenoszenie lub zmiana nazwy pliku</em></p>
+<pre class="pre-code">$ mv plik.txt 'Nowy Katalog'/ <p class="pre-code-comment">-- przenosi plik "plik.txt" do katalogu "Nowy Katalog"</p></pre>
+
+<h3 id="echo">echo</h3>
+<p><em>wyświetla wprowadzony tekst w terminalu lub zapisuje go do pliku</em></p>
+<pre class="pre-code">
+$ echo Przykładowy tekst<p class="pre-code-comment">-- wyświetla "Przykładowy tekst"</p>
+$ echo Przykładowy tekst &gt; plik.txt <p class="pre-code-comment">-- W tym wypadku echo wydrukuje tekst do pliku, ale wyczyści całą jego wcześniejszą zawartość, jeśli plik podany na standardowym wyjściu nie istnieje, zostanie utworzony.</p>
+$ echo Przykładowy tekst &gt;&gt; plik.txt <p class="pre-code-comment">-- tekst zostanie dopisany na końcu pliku, jego wcześniejsza zawartość nie zostanie usunięta.</p>
+</pre>
+
+<h3 id="grep--opcje-wzorzec-plik-lub-ścieżka">grep <span class="command-option">[-opcje] wzorzec [plik lub ścieżka]</span></h3>
+<p><em>wyszukiwanie wzorca w pliku</em></p>
+<pre class="pre-code">
+$ grep 'help' plik.txt<p class="pre-code-comment">-- wyszukuje w pliku "plik.txt" linie zawierające frazę "help"</p>
+$ history | grep 'help'<p class="pre-code-comment">-- wyszukuje dostępnej history polecen zwroty zawierające frazę 'help'</p>
+</pre>
+
+<h3 id="find">find</h3>
+<p><em>wyszukiwanie plików i katalogów</em></p>
+<pre class="pre-code">$ find /home/user/ -name "*.txt" <p class="pre-code-comment">-- wyszukuje pliki z rozszerzeniem ".txt" w katalogu "/home/user/"</p></pre>
+
+<h3 id="tar">tar</h3>
+<pre class="pre-code">$ tar -czvf archive.tar.gz Folder/ <p class="pre-code-comment">-- archiwizuje katalog "Folder" i zapisuje go do pliku "archive.tar.gz"</p></pre>
+
+<h3 id="unzip">unzip</h3>
+<pre class="pre-code">$ unzip archive.zip <p class="pre-code-comment">-- rozpakowuje plik "archive.zip"</p></pre>
+
+<h3 id="ping">ping</h3>
+<p><em>sprawdzanie połączenia z siecią</em></p>
+<pre class="pre-code">$ ping https://inftechall.pl/ <p class="pre-code-comment">-- sprawdza dostępność serwera "inftechall.pl"</p></pre>
+
+<h3 id="ifconfig">ifconfig</h3>
+<p><em>wyświetla informacje o interfejsach sieciowych</em></p>
+<pre class="pre-code">$ ifconfig eth0 <p class="pre-code-comment">-- wyświetla informacje o interfejsie eth0</p></pre>
+
+<h3 id="netstat">netstat</h3>
+<p><em>wyświetlanie informacji o połączeniach sieciowych</em></p>
+<pre class="pre-code">$ natstat -a <p class="pre-code-comment">--</p></pre>
+
+<h3 id="top">top</h3>
+<p><em>wyświetlanie informacji o procesach i zużyciu zasobów systemowych</em></p>
+<pre class="pre-code">$ top <p class="pre-code-comment">-- </p></pre>
+
+<h3 id="ps">ps</h3>
+<p><em>wyświetlanie listy procesów</em></p>
+<pre class="pre-code">$ ps aux <p class="pre-code-comment">-- wyświetla listę wszystkich procesów wraz z ich szczegółowymi informacjami</p></pre>
+
+<h3 id="kill">kill</h3>
+<p><em>wysyła sygnał do procesu, aby zakończył działanie</em></p>
+<pre class="pre-code">$ kill 2023<p class="pre-code-comment">-- wysyła sygnał SIGTERM do procesu o identyfikatorze 2023</p></pre>
+
+<h3 id="chmod">chmod</h3>
+<p><em>zmiana uprawnień do pliku lub katalogu</em></p>
+<pre class="pre-code">$ chmod 755 plik.txt <p class="pre-code-comment">-- nadaje uprawnienia odczytu, zapisu i wykonania właścicielowi pliku oraz uprawnienia odczytu i wykonania innym użytkownikom</p></pre>
+
+<h3 id="chown">chown</h3>
+<p><em>zmienia właściciela pliku lub katalogu</em></p>
+<pre class="pre-code">$ chown user doc.txt <p class="pre-code-comment">-- zmienia właściciela pliku "doc.txt" na użytkownika "user"</p></pre>
+
+<h3 id="whoami">whoami</h3>
+<p><em>wyświetla nazwę bieżącego użytkownika</em></p>
+<pre class="pre-code">$ whoami <p class="pre-code-comment">-- </p></pre>
+
+<h3 id="su">su</h3>
+<p><em>przełącza użytkownika</em></p>
+<pre class="pre-code">$ su user <p class="pre-code-comment">-- przełącza użytkownika na użytkownika "user"</p></pre>
+
+<h3 id="sudo">sudo</h3>
+<p><em>wykonuje polecenie jako administrator</em></p>
+<pre class="pre-code">$ sudo apt-get update <p class="pre-code-comment">-- aktualizuje listę pakietów jako administrator</p></pre>
+
+<h3 id="history">history</h3>
+<p><em>wyświetla historię poleceń</em></p>
+<pre class="pre-code">$ history <p class="pre-code-comment">-- wyświetla historię wszystkich poleceń wykonanych przez użytkownika</p></pre>
+
+<h3 id="date">date</h3>
+<p><em>wyświetla aktualną datę i czas</em></p>
+<pre class="pre-code">$ date <p class="pre-code-comment">-- </p></pre>
+
+<h3 id="cal">cal</h3>
+<p><em>wyświetla kalendarz</em></p>
+<pre class="pre-code">
+$ cal <p class="pre-code-comment">-- wyświetla kalendarz bieżącego miesiąca</p>
+$ cal -y<p class="pre-code-comment">-- wyświetla kalendarz na bieżący rok</p>
+</pre>
+
+<h3 id="du">du</h3>
+<p><em>wyświetla rozmiar pliku lub katalogu</em></p>
+<pre class="pre-code">$ du -h file.txt <p class="pre-code-comment">-- wyświetla rozmiar pliku "file.txt" w jednostkach kB/MB/GB</p></pre>
+
+<h3 id="df">df</h3>
+<p><em>wyświetla informacje o dyskach</em></p>
+<pre class="pre-code">$ df -h <p class="pre-code-comment">-- wyświetla informacje o dyskach w jednostkach kB/MB/GB</p></pre>
+
+<h3 id="free">free</h3>
+<p><em>wyświetlanie informacji o dostępnej pamięci</em></p>
+<pre class="pre-code">$ free -h <p class="pre-code-comment">-- wyświetla informacje o pamięci (czytelny sposób) w jednostkach kB/MB/GB</p></pre>
+
+<h3 id="wget">wget</h3>
+<p><em>program do pobierania plików z sieci</em></p>
+<pre class="pre-code">$ wget https://example.com/file.zip <p class="pre-code-comment">-- pobiera plik "file.zip" ze strony "example.com"</p></pre>
+
+<h3 id="crul">crul</h3>
+<p><em>narzędzie do przesyłania danych z lub do serwera, przy użyciu jednego z obsługiwanych protokołów
+(DICT, PLIK, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP,
+RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET i TFTP)</em></p>
+<pre class="pre-code">$ curl https://api.example.com/data <p class="pre-code-comment">-- pobiera dane z API "example.com"</p></pre>
+
+<h3 id="sed">sed</h3>
+<p><em>edycja i modyfikacja tekstu w plikach</em></p>
+<pre class="pre-code">$ sed 's/old_word/new_word/g' file.txt <p class="pre-code-comment">-- zamienia wszystkie wystąpienia tekstu "old_word" na "new_word" w pliku "file.txt"</p></pre>
+
+<h3 id="awk">awk</h3>
+<p><em>przetwarzanie i filtrowanie tekstu w plikach</em></p>
+<pre class="pre-code">$ awk '{print $1,$3}' file.txt <p class="pre-code-comment">-- wyświetla pierwszą i trzecią kolumnę z pliku "file.txt"</p></pre>
+
+<h3 id="tail">tail</h3>
+<p><em>wyświetlanie końcowych linii pliku</em></p>
+<pre class="pre-code">$ tail -n 10 file.txt <p class="pre-code-comment">-- wyświetla ostatnie 10 linii pliku "file.txt"</p></pre>
+
+<h3 id="head">head</h3>
+<p><em>wyświetlanie początkowych linii pliku</em></p>
+<pre class="pre-code">$ head -n 5 file.txt <p class="pre-code-comment">-- wyświetla pierwsze 5 linii pliku "file.txt"</p></pre>
+
+<h3 id="less">less</h3>
+<p><em>przeglądanie plików tekstowych strona po stronie</em></p>
+<pre class="pre-code">$ less file.txt <p class="pre-code-comment">-- otwiera plik "file.txt" w trybie przeglądania strona po stronie</p></pre>
+
 </div>
-            <a class="read-more" href="/c_sharp/zmiana-sciezki-systemowej-w-winows/">Czytaj więcej
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right"
-    viewBox="0 0 16 16">
-    <path fill-rule="evenodd"
-        d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
-    <path fill-rule="evenodd"
-        d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
-</svg>
-            </a>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="post">
-    <div class="row">
-        <div class="col-md-4 margin-auto">
-            <div class="post-header"><img class="img-thumbnail" src="/assets/thumbnail/markus-spiske-MI9-PY5cyNs-unsplash.jpg" loading="lazy" alt="c_sharp" /></div>
-        </div>
-        <div class="col-md-8">
-            <h2 class="post-title"><a href="/c_sharp/macierze-w-c_sharp/">Dodawanie, mnożenie macierzy w C#</a></h2>
-            <p>
-                <div class="post-meta">
-                    <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd"
-        d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
-    <path fill-rule="evenodd"
-        d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-</svg>
-                    15 Feb 2014
-                </div>
-
-                <div class="post-meta">
-                    <svg class="color-950707" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-table" fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd"
-        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
-</svg>
-                    <a class="category-post-link" href="/category/c_sharp.html">c_sharp</a>
-                </div>
-            </p>
-            <div class="post-content"><p>Przykład programu realizującego dodawanie oraz mnożenie macierzy. Użytkownik za pomocą konsoli wprowadza dane określające macierze:</p>
-</div>
-            <a class="read-more" href="/c_sharp/macierze-w-c_sharp/">Czytaj więcej
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right"
-    viewBox="0 0 16 16">
-    <path fill-rule="evenodd"
-        d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
-    <path fill-rule="evenodd"
-        d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
-</svg>
-            </a>
-        </div>
-    </div>
-</div>
-
-
-
-
           </div>
 
           <div class="col-md-3 widget">
