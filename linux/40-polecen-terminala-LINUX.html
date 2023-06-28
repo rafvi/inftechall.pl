@@ -244,7 +244,10 @@ $ history | grep 'help'<p class="pre-code-comment">-- wyszukuje dostępnej histo
 
 <h3 id="history">history</h3>
 <p><em>wyświetla historię poleceń</em></p>
-<pre class="pre-code">$ history <p class="pre-code-comment">-- wyświetla historię wszystkich poleceń wykonanych przez użytkownika</p></pre>
+<pre class="pre-code">
+  $ history <p class="pre-code-comment">-- wyświetla historię wszystkich poleceń wykonanych przez użytkownika</p>
+  $ history -d 1012 <p class="pre-code-comment">-- usuwa z historii pozycje numer 1012</p>
+</pre>
 
 <h3 id="date">date</h3>
 <p><em>wyświetla aktualną datę i czas</em></p>
@@ -285,7 +288,10 @@ RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET i TFTP)</em></p>
 
 <h3 id="awk">awk</h3>
 <p><em>przetwarzanie i filtrowanie tekstu w plikach</em></p>
-<pre class="pre-code">$ awk '{print $1,$3}' file.txt <p class="pre-code-comment">-- wyświetla pierwszą i trzecią kolumnę z pliku "file.txt"</p></pre>
+<pre class="pre-code">
+  $ awk '{print $1,$3}' file.txt <p class="pre-code-comment">-- {print $1,$3} wyświetla pierwszą i trzecią kolumnę z pliku "file.txt"</p>
+  $ history | grep 'code' | awk '{ print $0 }' <p class="pre-code-comment">-- {print $0} wyświetla wszytkie kolumny</p>
+</pre>
 
 <h3 id="tail">tail</h3>
 <p><em>wyświetlanie końcowych linii pliku</em></p>
